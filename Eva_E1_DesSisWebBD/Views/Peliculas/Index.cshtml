@@ -1,0 +1,73 @@
+﻿@model IEnumerable<Eva_E1_DesSisWebBD.Models.Peliculas>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Cinemania</title>
+    <style>
+        .card {
+            width: 25rem; 
+            transition: transform 0.3s ease-in-out; 
+        }
+        .card:hover {
+            transform: scale(1.05); 
+        }
+        .image-container {
+            width: 100%;
+            padding-top: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+            .image-container img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: contain; 
+                border-radius: 10px; 
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+                border: 3px solid #808080; 
+            }
+            h1{
+                text-align: center;
+                margin-top: 2rem;   
+                margin-bottom: 3rem;
+                
+            }
+    </style>
+</head>
+<body class="container">
+    <div>
+        <h1>Cinemania</h1>
+    </div>
+
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="image-container">
+                        <img class="card-img-top" src="@Html.DisplayFor(modelItem => item.urlPelicula)" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title">@Html.DisplayFor(modelItem => item.nombrePelicula)</h4>
+                        <span class="card-text"><b>Sala:</b> @Html.DisplayFor(modelItem => item.numeroSala)</span>
+                        <span class="card-subtitle"><b>Horario:</b> @Html.DisplayFor(modelItem => item.horario)</span>
+                        <br />
+                        <small class="small">ID:  @Html.DisplayFor(modelItem => item.idPelicula)</small>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eva_E1_DesSisWebBD", "Eva_E1_DesSisWebBD\Eva_E1_DesSisWebBD.csproj", "{F1B03276-AA84-4660-A510-DF25BAE88EF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1B03276-AA84-4660-A510-DF25BAE88EF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1B03276-AA84-4660-A510-DF25BAE88EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1B03276-AA84-4660-A510-DF25BAE88EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1B03276-AA84-4660-A510-DF25BAE88EF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A21D17C7-432C-4880-8B5D-339825DFA5AC}
+	EndGlobalSection
+EndGlobal
